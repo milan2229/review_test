@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('user', 'UserController');
+
+
+// Route::group(['prefix'=>'user'], function(){
+//     Route::get('index', 'UserController@index')->name('user.index');
+//     Route::get('create', 'UserController@create')->name('user.create');
+//     Route::post('store', 'UserController@store')->name('user.store');
+// });
